@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Grass
+  - Horse
+  - Item
+  - Rapira
+  - Chest
+  - Inventory
+  - Furnace
+  - Fuel
+  - ObjectFurnace
+  - trap
+  - Plattform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Horse
+  - Ground_side
+  - Minimap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: ground
+    uniqueID: 1783020825
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: NPC
+    uniqueID: 3094647871
+    locked: 0
+  - name: Player
+    uniqueID: 2089052983
+    locked: 0
+  - name: Environment_foreground
+    uniqueID: 4139640763
+    locked: 0

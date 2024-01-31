@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+    xmlns:doap="http://usefulinc.com/ns/doap#" xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+    xmlns:cc="http://creativecommons.org/ns#" xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:svcs="http://rdfs.org/sioc/services#" xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:dqv="http://www.w3.org/ns/dqv#">
+    <edm:ProvidedCHO
+        rdf:about="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+    <edm:WebResource
+        rdf:about="https://www.stadtmuseum.leipzig.de/DE-MUS-853418/medien/wmZoom=Z0070119">
+        <ebucore:hasMimeType>image/jpeg</ebucore:hasMimeType>
+        <ebucore:fileByteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+            >101873</ebucore:fileByteSize>
+        <ebucore:width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">475</ebucore:width>
+        <ebucore:height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</ebucore:height>
+        <edm:hasColorSpace>sRGB</edm:hasColorSpace>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#FAEBD7</edm:componentColor>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#B0C4DE</edm:componentColor>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#8FBC8F</edm:componentColor>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#FFFAFA</edm:componentColor>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#CD853F</edm:componentColor>
+        <edm:componentColor rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary"
+            >#F5F5DC</edm:componentColor>
+        <ebucore:orientation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >portrait</ebucore:orientation>
+    </edm:WebResource>
+    <edm:WebResource rdf:about="https://www.stadtmuseum.leipzig.de/DE-MUS-853418/objekt=Z0070119"/>
+    <skos:Concept rdf:about="http://data.europeana.eu/concept/1773">
+        <skos:prefLabel xml:lang="de">Zinn</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">Tina</skos:prefLabel>
+        <skos:prefLabel xml:lang="ru">Олово</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Estanho</skos:prefLabel>
+        <skos:prefLabel xml:lang="bg">Калай</skos:prefLabel>
+        <skos:prefLabel xml:lang="lt">Alavas</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">Alva</skos:prefLabel>
+        <skos:prefLabel xml:lang="hr">Kositar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Étain</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">Ón</skos:prefLabel>
+        <skos:prefLabel xml:lang="sk">Cín</skos:prefLabel>
+        <skos:prefLabel xml:lang="sl">Kositer</skos:prefLabel>
+        <skos:prefLabel xml:lang="ga">Stán</skos:prefLabel>
+        <skos:prefLabel xml:lang="ca">Estany</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">Tenn</skos:prefLabel>
+        <skos:prefLabel xml:lang="mt">Landa</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Κασσίτερος</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Tin</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Stagno</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Estaño</skos:prefLabel>
+        <skos:prefLabel xml:lang="et">Tina</skos:prefLabel>
+        <skos:prefLabel xml:lang="eu">Eztainu</skos:prefLabel>
+        <skos:prefLabel xml:lang="cs">Cín</skos:prefLabel>
+        <skos:prefLabel xml:lang="pl">Cyna</skos:prefLabel>
+        <skos:prefLabel xml:lang="ro">Staniu</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">Tin</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">Tin</skos:prefLabel>
+        <skos:note xml:lang="de">Chemisches Element mit dem Symbol Sn und der Ordnungszahl 50,
+            Schwermetall</skos:note>
+        <skos:note xml:lang="fi">Alkuaine</skos:note>
+        <skos:note xml:lang="sv">Metalliskt grundämne</skos:note>
+        <skos:note xml:lang="ru">Химический элемент с порядковым номером 50</skos:note>
+        <skos:note xml:lang="pt">Elemento químico com número atómico 50</skos:note>
+        <skos:note xml:lang="bg">Химичен елемент с атомен номер 50</skos:note>
+        <skos:note xml:lang="el">Χημικό στοιχείο με σύμβολο Sn και ατομικό αριθμό 50</skos:note>
+        <skos:note xml:lang="en">Chemical element with symbol Sn and atomic number 50</skos:note>
+        <skos:note xml:lang="lv">Ķīmiskais elements</skos:note>
+        <skos:note xml:lang="it">Sn - Elemento chimico con numero atomico 50</skos:note>
+        <skos:note xml:lang="fr">Élément chimique de numéro atomique 50 et de symbole Sn</skos:note>
+        <skos:note xml:lang="hu">Kémiai elem, rendszáma 50, vegyjele Sn</skos:note>
+        <skos:note xml:lang="es">Elemento químico</skos:note>
+        <skos:note xml:lang="cs">Chemický prvek s atomovým číslem 50</skos:note>
+        <skos:note xml:lang="eu">50 zenbaki atomikoa duen elementu kimikoa</skos:note>
+        <skos:note xml:lang="sk">Chemický prvok s protónovým číslom 50</skos:note>
+        <skos:note xml:lang="pl">50. pierwiastek chemiczny</skos:note>
+        <skos:note xml:lang="da">Grundstof med atomnummer 50</skos:note>
+        <skos:note xml:lang="ro">Elementul chimic cu numărul de ordine 50</skos:note>
+        <skos:note xml:lang="ca">Element químic amb nombre atòmic 50</skos:note>
+        <skos:note xml:lang="nl">Scheikundig element met symbool Sn en atoomnummer 50</skos:note>
+        <skos:broader rdf:resource="http://data.europeana.eu/concept/1766"/>
+        <skos:exactMatch rdf:resource="http://www.wikidata.org/entity/Q1096"/>
+        <skos:exactMatch rdf:resource="https://d-nb.info/gnd/4190888-0"/>
+        <skos:exactMatch rdf:resource="http://id.loc.gov/authorities/names/sh85135484"/>
+        <skos:exactMatch rdf:resource="http://data.bnf.fr/ark:/12148/cb11952265h"/>
+        <skos:exactMatch rdf:resource="http://id.ndl.go.jp/auth/ndlna/00571788"/>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D014001"/>
+        <skos:exactMatch rdf:resource="http://purl.org/bncf/tid/20961"/>
+        <skos:exactMatch rdf:resource="https://www.freebase.com/m/025sk5n"/>
+        <skos:exactMatch rdf:resource="https://g.co/kg/m/025sk5n"/>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D01.268.556.875"/>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D01.552.544.875"/>
+        <skos:exactMatch rdf:resource="http://datos.bne.es/resource/XX530512"/>
+        <skos:exactMatch rdf:resource="http://vocab.getty.edu/aat/300133748"/>
+        <skos:exactMatch rdf:resource="http://www.yso.fi/onto/yso/p15916"/>
+        <skos:exactMatch rdf:resource="http://babelnet.org/rdf/s00006881n"/>
+        <skos:exactMatch rdf:resource="http://nomisma.org/id/sn"/>
+        <skos:exactMatch rdf:resource="http://thesaurus.europeanafashion.eu/thesaurus/10551"/>
+        <skos:exactMatch rdf:resource="http://zbw.eu/stw/descriptor/14310-1"/>
+        <skos:exactMatch rdf:resource="http://dbpedia.org/resource/Tin"/>
+    </skos:Concept>
+    <ore:Aggregation
+        rdf:about="http://data.europeana.eu/aggregation/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119">
+        <edm:aggregatedCHO
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <edm:dataProvider rdf:resource="http://data.europeana.eu/organization/1482250000004514725"/>
+        <edm:isShownAt
+            rdf:resource="https://www.stadtmuseum.leipzig.de/DE-MUS-853418/objekt=Z0070119"/>
+        <edm:isShownBy
+            rdf:resource="https://www.stadtmuseum.leipzig.de/DE-MUS-853418/medien/wmZoom=Z0070119"/>
+        <edm:provider rdf:resource="http://data.europeana.eu/organization/1482250000004671142"/>
+        <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+    </ore:Aggregation>
+    <ore:Proxy
+        rdf:about="http://data.europeana.eu/proxy/europeana/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119">
+        <dc:format xml:lang="en">cast</dc:format>
+        <dc:format xml:lang="en">painted</dc:format>
+        <dc:identifier>http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Stadtgeschichtliches
+            Museum Leipzig/Z0070119</dc:identifier>
+        <dc:subject xml:lang="en">Fairy tales</dc:subject>
+        <dc:type xml:lang="en">tin figure</dc:type>
+        <dcterms:created xml:lang="en">between 1850 and 1860</dcterms:created>
+        <dcterms:medium rdf:resource="http://data.europeana.eu/concept/1773"/>
+        <dcterms:medium xml:lang="en">tin</dcterms:medium>
+        <edm:europeanaProxy>true</edm:europeanaProxy>
+        <ore:proxyFor
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <ore:proxyIn
+            rdf:resource="http://data.europeana.eu/aggregation/europeana/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <ore:lineage
+            rdf:resource="http://data.europeana.eu/proxy/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <edm:type>IMAGE</edm:type>
+    </ore:Proxy>
+    <ore:Proxy
+        rdf:about="http://data.europeana.eu/proxy/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119">
+        <dc:description xml:lang="de">Bemalte Zinnfigur (flach) Der gestiefelte Kater. Schwarze
+            Stiefel, Hut und einen Stock in der Pfote.</dc:description>
+        <dc:format xml:lang="de">gegossen</dc:format>
+        <dc:format xml:lang="de">bemalt</dc:format>
+        <dc:identifier>V/156/2009(Inventarnummer) |</dc:identifier>
+        <dc:identifier>Z0070119</dc:identifier>
+        <dc:rights xml:lang="de">Stadtgeschichtliches Museum Leipzig</dc:rights>
+        <dc:subject xml:lang="de">Märchen</dc:subject>
+        <dc:title xml:lang="de">Gestiefelte Kater</dc:title>
+        <dc:type xml:lang="de">Zinnfigur</dc:type>
+        <dc:type rdf:resource="http://udcdata.info/rdf/025209"/>
+        <dcterms:created xml:lang="de">um zwischen 1850 und 1860</dcterms:created>
+        <dcterms:extent xml:lang="de">Höhe: 4,5 cm</dcterms:extent>
+        <dcterms:medium xml:lang="de">Zinn</dcterms:medium>
+        <dcterms:provenance xml:lang="de">Stadtgeschichtliches Museum Leipzig,
+            Leipzig</dcterms:provenance>
+        <edm:europeanaProxy>false</edm:europeanaProxy>
+        <ore:proxyFor
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <ore:proxyIn
+            rdf:resource="http://data.europeana.eu/aggregation/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <edm:type>IMAGE</edm:type>
+    </ore:Proxy>
+    <edm:EuropeanaAggregation
+        rdf:about="http://data.europeana.eu/aggregation/europeana/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119">
+        <edm:aggregatedCHO
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <edm:datasetName>08547_Museu_MULeipzig</edm:datasetName>
+        <edm:country>Germany</edm:country>
+        <edm:preview
+            rdf:resource="https://www.stadtmuseum.leipzig.de/DE-MUS-853418/medien/wmZoom=Z0070119"/>
+        <edm:landingPage
+            rdf:resource="https://www.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <edm:language>de</edm:language>
+        <edm:completeness>0</edm:completeness>
+        <dcterms:created>2022-06-17T06:40:44.399Z</dcterms:created>
+        <dcterms:modified>2022-09-30T13:50:03.912Z</dcterms:modified>
+        <dqv:hasQualityAnnotation
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119#contentTier"/>
+        <dqv:hasQualityAnnotation
+            rdf:resource="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119#metadataTier"
+        />
+    </edm:EuropeanaAggregation>
+    <foaf:Organization rdf:about="http://data.europeana.eu/organization/1482250000004671142">
+        <skos:prefLabel xml:lang="en">MUSEU</skos:prefLabel>
+    </foaf:Organization>
+    <foaf:Organization rdf:about="http://data.europeana.eu/organization/1482250000004514725">
+        <skos:prefLabel xml:lang="de">Stadtgeschichtliches Museum Leipzig</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Museum of City History Leipzig</skos:prefLabel>
+    </foaf:Organization>
+    <dqv:QualityAnnotation
+        rdf:about="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119#contentTier">
+        <dcterms:created>2022-09-30T14:29:36.607757Z</dcterms:created>
+        <oa:hasTarget
+            rdf:resource="http://data.europeana.eu/aggregation/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <oa:hasBody rdf:resource="http://www.europeana.eu/schemas/epf/contentTier1"/>
+    </dqv:QualityAnnotation>
+    <dqv:QualityAnnotation
+        rdf:about="http://data.europeana.eu/item/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119#metadataTier">
+        <dcterms:created>2022-09-30T14:29:36.607779Z</dcterms:created>
+        <oa:hasTarget
+            rdf:resource="http://data.europeana.eu/aggregation/provider/08547/Museu_ProvidedCHO_Stadtgeschichtliches_Museum_Leipzig_Z0070119"/>
+        <oa:hasBody rdf:resource="http://www.europeana.eu/schemas/epf/metadataTierA"/>
+    </dqv:QualityAnnotation>
+</rdf:RDF>
