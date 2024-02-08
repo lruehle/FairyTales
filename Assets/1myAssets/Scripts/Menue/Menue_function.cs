@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menue_function : MonoBehaviour
 {
     [SerializeField] private GameObject save_load_story;
+    [SerializeField] private GameObject function_panel;
     private Save_Story save_load_script;
 
     public void Start_this_Game()
@@ -26,5 +27,13 @@ public class Menue_function : MonoBehaviour
     public void Read_Tale()
     {
         SceneManager.LoadScene(2);
+    }
+
+    public void Funktion_Panel_Interaktion()
+    {
+        if(function_panel)
+        {
+            function_panel.SetActive(!function_panel.activeSelf);
+        }
     }
 }

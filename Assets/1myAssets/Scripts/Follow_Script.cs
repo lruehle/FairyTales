@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//Object follows Player Character with move_speed keeping distance
 public class Follow_Script : MonoBehaviour
 {
     public float distance; 
-    private float move_speed; 
+    public float move_speed; 
     private Transform target_transform;
     private GameObject player;
     private Player_movement player_movement_script;
+    //public enum Move_states {idle, walk};
+    public bool is_moving;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +34,9 @@ public class Follow_Script : MonoBehaviour
     {
         if(Vector2.Distance(transform.position, target_transform.position) > distance)
         {
+            is_moving = true;
             transform.position = Vector2.MoveTowards(transform.position, target_transform.position, move_speed * Time.deltaTime);
         }
+        else is_moving = false; 
     }
 }

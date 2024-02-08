@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1468311033611141947}
   - component: {fileID: 1468311033611141944}
   - component: {fileID: 1175294739}
+  - component: {fileID: 1027807341015651981}
   m_Layer: 8
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Companion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +106,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!58 &1027807341015651981
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468311033611141946}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08091141, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.3068967
 --- !u!1 &1468311035079362480
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +134,7 @@ GameObject:
   - component: {fileID: 1468311035079362486}
   m_Layer: 8
   m_Name: Companion_placeholder
-  m_TagString: Untagged
+  m_TagString: Companion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,3 +168,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 1.5
+  move_speed: 0
+  is_moving: 0

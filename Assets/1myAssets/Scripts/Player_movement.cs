@@ -11,9 +11,7 @@ public class Player_movement : MonoBehaviour
     private SpriteRenderer player_rend;
     private Animator player_anim;
     private enum Animation_states {idle, walk};
-    //public float forceDamping;
-    // Start is called before the first frame update
-    //https://pastebin.com/MUTfnmvW
+
     void Start()
     {
         player_anim = GetComponent<Animator>();
@@ -23,10 +21,10 @@ public class Player_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //negative for left, pos for right
+        //negative values for left/up, positive values for right/down
         player_input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     }
-     void FixedUpdate()
+    void FixedUpdate()
     {
         Vector2 moveForce = player_input * moveSpeed;
         /* apply this if force is supposed to be applied to character (hits, pushes etc.)
@@ -57,10 +55,5 @@ public class Player_movement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Player collided");
-        /*if (collision.collider.CompareTag("Bullet"))
-        {
-            forceToApply += new Vector2(-20, 0);
-            Destroy(collision.gameObject);
-        }*/
     }
 }

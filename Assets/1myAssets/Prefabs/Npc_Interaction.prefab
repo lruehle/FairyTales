@@ -73,9 +73,9 @@ SpriteRenderer:
   m_SortingLayerID: 1783020825
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5,
     type: 3}
-  m_Color: {r: 0.8980392, g: 0.73333335, b: 0.5882353, a: 0.3764706}
+  m_Color: {r: 0.8980393, g: 0.3137255, b: 0.22352943, a: 0.7529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj_with_state_manager: {fileID: 0}
   interaction_Key: 101
+  content: 
   npc_event:
     m_PersistentCalls:
       m_Calls:

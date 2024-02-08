@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,6 +12,7 @@ public class NPC_Interaction_event : MonoBehaviour
     private Story_Teller story_teller_script;
     [SerializeField] private KeyCode interaction_Key;
     [SerializeField] private string content;
+    [SerializeField] private GameObject info_txt;
     public UnityEvent npc_event;
     private bool playerIsClose;
     void Start()
@@ -28,13 +30,6 @@ public class NPC_Interaction_event : MonoBehaviour
             if(Input.GetKeyDown(interaction_Key))
             {
                 npc_event.Invoke();
-                //if fought_Evil == False
-                // write text
-                //set fought_evil
-                //else
-                //nothing
-                //State_Manager_Player.Set_Fought_Evil(true)
-                //npc_event.Invoke();
             }
         }
         
@@ -53,14 +48,13 @@ public class NPC_Interaction_event : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             playerIsClose = false;
-            //europeana_data.Unset_Europeana_Panel();
+            if(info_txt) info_txt.SetActive(false);
         }
     }
 
     private void Write_to_Panel(string txt)
     {
         story_teller_script.Add_to_Panel_txt(txt);
-        Debug.Log("writing");
     }
 
     public void Spawn_Companion_event()
@@ -72,11 +66,33 @@ public class NPC_Interaction_event : MonoBehaviour
         state_Manager.Instantiate_Companion();
     }
 
-    public void Fight_evil_event(){
+    public void Fight_Evil_event(){
         if(!state_Manager.Get_Fought_Evil())
         {
             Write_to_Panel(content);
         }
         state_Manager.Fight_Evil();
+    }
+
+    public void Free_Princess()
+    {
+        if(!state_Manager.Get_Free_Princess())
+        {
+            Write_to_Panel(content);
+        }
+        state_Manager.Free_Princess();
+    }
+
+    public void Marry_Someone()
+    {
+        if(!state_Manager.Get_Free_Princess())
+        {
+            info_txt.SetActive(true);
+        }
+        if(state_Manager.Get_Free_Princess() && !state_Manager.Get_Has_Married())
+        {
+            Write_to_Panel(content);
+        }
+        state_Manager.Get_Married();
     }
 }

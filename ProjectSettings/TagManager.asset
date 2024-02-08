@@ -15,6 +15,7 @@ TagManager:
   - ObjectFurnace
   - trap
   - Plattform
+  - Companion
   layers:
   - Default
   - TransparentFX
