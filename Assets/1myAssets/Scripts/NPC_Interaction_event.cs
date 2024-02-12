@@ -22,13 +22,14 @@ public class NPC_Interaction_event : MonoBehaviour
         story_teller_script = GameObject.Find("Canvas/BG/Story_Teller_Object").GetComponent<Story_Teller>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if(playerIsClose)
         {
             if(Input.GetKeyDown(interaction_Key))
             {
+                //invokes event set in Editor. So far includes below functions for Companion/Fight/Free/Marry
                 npc_event.Invoke();
             }
         }
@@ -57,6 +58,9 @@ public class NPC_Interaction_event : MonoBehaviour
         story_teller_script.Add_to_Panel_txt(txt);
     }
 
+    // logic is separated between interaction_event.cs and State_Manager_Player.cs
+    // the events here interact with the Story Panel. Manager handles additional logic for world states (animations, instantiations...)
+    // If alot more events are implemented, Eventlisteners are a good alternative
     public void Spawn_Companion_event()
     {
         if(!state_Manager.Get_Has_Companion())
@@ -84,12 +88,13 @@ public class NPC_Interaction_event : MonoBehaviour
     }
 
     public void Marry_Someone()
-    {
+    {   //information display about condition to get married
         if(!state_Manager.Get_Free_Princess())
         {
             info_txt.SetActive(true);
+            return;
         }
-        if(state_Manager.Get_Free_Princess() && !state_Manager.Get_Has_Married())
+        if(!state_Manager.Get_Has_Married())
         {
             Write_to_Panel(content);
         }

@@ -7360,7 +7360,7 @@ PrefabInstance:
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: content
-      value: "Ohne es zu wissen, half der Held dem B\xF6sewicht! <br>\n"
+      value: "Ohne es zu wissen, half der Held dem B\xF6sewicht! <br>"
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -8398,8 +8398,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
+  m_XDamping: 1.25
+  m_YDamping: 1.25
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
@@ -10444,7 +10444,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10468,7 +10468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328986035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -21.56, z: -10}
+  m_LocalPosition: {x: 0.7, y: 16.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13474,7 +13474,7 @@ RectTransform:
   m_GameObject: {fileID: 407560117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4597, y: 1.4597, z: 1.4597}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1737217416}
@@ -13489,7 +13489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8, y: 488.94827}
+  m_AnchoredPosition: {x: 11, y: 470.1}
   m_SizeDelta: {x: -1257.4692, y: -994.3365}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407560119
@@ -20322,14 +20322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Es war einmal....</b>
-
-
-    ...Ein Held, der sich aufmachte ein eigenes
-    Abenteuer zu erleben.
-
-
-'
+  m_text: "<b>Es war einmal....</b>\n\n...Ein Held, der sein zu Hause verlie\xDF...\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6f1b55931f0a576429198be0a2d88021, type: 2}
   m_sharedMaterial: {fileID: 663994878859053860, guid: 6f1b55931f0a576429198be0a2d88021,
@@ -21551,7 +21544,7 @@ RectTransform:
   m_GameObject: {fileID: 694348251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.231}
+  m_LocalScale: {x: 0.2550371, y: 0.2550371, z: 0.39275712}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1351668118}
@@ -21560,8 +21553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 719.19995, y: 515.4}
-  m_SizeDelta: {x: 400, y: 200}
+  m_AnchoredPosition: {x: 604, y: 494.00006}
+  m_SizeDelta: {x: 500, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694348253
 MonoBehaviour:
@@ -22592,7 +22585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708642845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.55, y: -3.06, z: 0}
   m_LocalScale: {x: 0.34796125, y: 0.26274624, z: 0.28405}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24951,6 +24944,70 @@ Transform:
   m_Father: {fileID: 1398476225}
   m_RootOrder: 164
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.983}
+--- !u!1 &752984843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752984845}
+  - component: {fileID: 752984846}
+  m_Layer: 0
+  m_Name: camera_bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752984845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752984843}
+  m_LocalRotation: {x: -0, y: -0, z: -0.1646264, w: 0.986356}
+  m_LocalPosition: {x: -3.5, y: 2.3, z: -11.142448}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -18.951}
+--- !u!60 &752984846
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752984843}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 47.394447, y: 30.815624}
+      - {x: -24.83678, y: 30.082151}
+      - {x: -36.60599, y: 18.713121}
+      - {x: -46.696667, y: 6.7183056}
+      - {x: -46.839424, y: -20.65267}
+      - {x: -25.020046, y: -31.369392}
+      - {x: 47.006424, y: -30.744421}
 --- !u!1001 &754074810
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26326,7 +26383,7 @@ PrefabInstance:
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: content
-      value: The hero kam zu einer Gebirgskette. <br>
+      value: Eine Gebirgskette ragte vor dem Held empor. <br>
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -39286,7 +39343,7 @@ PrefabInstance:
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: condition_content
-      value: "Der Held h\xF6rte nicht auf die Warnung des Verbots.  <br>"
+      value: "aber der Held h\xF6rte nicht auf die Warnung des Verbots.  <br>"
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -39813,7 +39870,7 @@ RectTransform:
   m_GameObject: {fileID: 1213977233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.65544, y: 0.65544, z: 0.65544}
+  m_LocalScale: {x: 1.020389, y: 1.020389, z: 1.020389}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 882244044}
@@ -39821,7 +39878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25, y: -25}
+  m_AnchoredPosition: {x: -43, y: -45.9}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213977235
@@ -44926,13 +44983,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -56066,6 +56123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1633132227}
   - component: {fileID: 1633132226}
+  - component: {fileID: 1633132228}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -56095,7 +56153,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1882864733}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6
+    OrthographicSize: 6.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -56119,7 +56177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633132225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -21.56, z: -10}
+  m_LocalPosition: {x: 0.7, y: 16.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56127,6 +56185,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1633132228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633132225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoundingShape2D: {fileID: 752984846}
+  m_Damping: 4
+  m_MaxWindowSize: -1
 --- !u!1001 &1637219164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57278,7 +57351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Read<br>Tales
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -57305,13 +57378,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -63333,7 +63406,7 @@ PrefabInstance:
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: content
-      value: Der Held kam zu einer Gebirgskette. <br>
+      value: Eine Gebirgskette ragte vor dem Held empor. <br>
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -65713,7 +65786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882864732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -21.56, z: 0}
+  m_LocalPosition: {x: 0.7, y: 16.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67586,7 +67659,7 @@ GameObject:
   - component: {fileID: 1930973311}
   - component: {fileID: 1930973310}
   m_Layer: 5
-  m_Name: Button_Tales
+  m_Name: Button_Menue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67601,7 +67674,7 @@ RectTransform:
   m_GameObject: {fileID: 1930973308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.231}
+  m_LocalScale: {x: 0.25261104, y: 0.25261104, z: 0.38902098}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1668559394}
@@ -67610,8 +67683,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 834.1, y: 515.4}
-  m_SizeDelta: {x: 400, y: 200}
+  m_AnchoredPosition: {x: 784, y: 494}
+  m_SizeDelta: {x: 460, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1930973310
 MonoBehaviour:
@@ -67659,7 +67732,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1147386754}
         m_TargetAssemblyTypeName: Menue_function, Assembly-CSharp
-        m_MethodName: Read_Tale
+        m_MethodName: Open_Main_Menue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -74739,7 +74812,8 @@ PrefabInstance:
     - target: {fileID: 3173544338434843050, guid: fdf66fec5d744a849a6472ffc3c36eb0,
         type: 3}
       propertyPath: content
-      value: Der Held fand einen magischen Helfer. <br>
+      value: Der Held begnete einem magischen Helfer, der ihn fortan begleitete.
+        <br>
       objectReference: {fileID: 0}
     - target: {fileID: 3173544338434843050, guid: fdf66fec5d744a849a6472ffc3c36eb0,
         type: 3}

@@ -37,8 +37,6 @@ public class Save_Story : MonoBehaviour
         writer.Write(Read_StoryTeller_txt());
         writer.Close();
         StreamReader reader = new StreamReader(path);
-        //Print the text from the file
-        //Debug.Log(reader.ReadToEnd());
         reader.Close();
     }
 
