@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Toggle_Text : MonoBehaviour
+public class Toggle_Trigger : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //this is connected to the Toggle-Panel
+    //id is value for each toggle
+    //id of toggle and id of Object to be turned off with toggle must be identical 
     public int id;
     void Start()
     {   
@@ -15,6 +17,6 @@ public class Toggle_Text : MonoBehaviour
 
     public void Trigger_this_Toggle()
     {
-        Toggle_Propp_Funkts.current.ToggleAction(id);
+        Toggle_Propp_Event.current.ToggleAction(id);
     }
 }

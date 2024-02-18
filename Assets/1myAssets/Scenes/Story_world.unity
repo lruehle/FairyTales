@@ -4276,7 +4276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.88, y: -1.65}
+  m_AnchoredPosition: {x: 5.3, y: -1.98}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148490473
@@ -4299,10 +4299,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A princess is needed first
+  m_text: Zuerst braucht es eine Prinzessin!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f1b55931f0a576429198be0a2d88021, type: 2}
+  m_sharedMaterial: {fileID: 663994878859053860, guid: 6f1b55931f0a576429198be0a2d88021,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4326,8 +4327,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4362,7 +4363,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 14.705252, w: 2.4371054}
+  m_margin: {x: 0, y: 0, z: 15.857678, w: 3.2177799}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -4391,7 +4392,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 663994878859053860, guid: 6f1b55931f0a576429198be0a2d88021, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6809,7 +6810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224088883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.22, y: 28.12, z: 0}
+  m_LocalPosition: {x: 43.1, y: 23.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7364,13 +7365,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: prev_State
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: place_State
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: condition_content
-      value: 
+      value: "als Folge half er dem B\xF6sewicht, ohne es zu wissen. <br>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: obligatory_prev_State
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -10468,7 +10479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328986035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 16.2, z: -10}
+  m_LocalPosition: {x: 6.3, y: 12.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13459,7 +13470,7 @@ GameObject:
   - component: {fileID: 407560120}
   - component: {fileID: 407560119}
   m_Layer: 5
-  m_Name: Function_Panel
+  m_Name: Toggle_Function_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13485,7 +13496,7 @@ RectTransform:
   - {fileID: 1179814454}
   - {fileID: 1457193312}
   m_Father: {fileID: 882244044}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16506,7 +16517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526789621}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36, y: 0.2, z: 1.1486652}
+  m_LocalPosition: {x: 4.5, y: 0.9, z: 1.1486652}
   m_LocalScale: {x: 1.5992677, y: 1.5992677, z: 1.5992677}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18332,6 +18343,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: has_condition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: condition_content
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: interact_only_once
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: obligatory_prev_State
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
@@ -19707,7 +19738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635400982}
   - component: {fileID: 635400984}
-  - component: {fileID: 635400983}
+  - component: {fileID: 635400985}
   m_Layer: 5
   m_Name: Toggle_Trickery
   m_TagString: Untagged
@@ -19737,19 +19768,6 @@ RectTransform:
   m_AnchoredPosition: {x: 233.2, y: 14.100098}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &635400983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635400981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 3
 --- !u!114 &635400984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19797,8 +19815,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 635400983}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 635400985}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -19810,6 +19828,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &635400985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635400981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3
 --- !u!1 &639001038
 GameObject:
   m_ObjectHideFlags: 0
@@ -21544,16 +21575,16 @@ RectTransform:
   m_GameObject: {fileID: 694348251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2550371, y: 0.2550371, z: 0.39275712}
+  m_LocalScale: {x: 0.19532964, y: 0.19532964, z: 0.30080763}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1351668118}
   m_Father: {fileID: 882244044}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 604, y: 494.00006}
+  m_AnchoredPosition: {x: 659.3, y: 494.00006}
   m_SizeDelta: {x: 500, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694348253
@@ -26392,6 +26423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: interact_only_once
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
@@ -28456,7 +28492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864795712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.940002, y: 12.099999, z: 0}
+  m_LocalPosition: {x: 5.939998, y: 7.5799985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28867,10 +28903,10 @@ RectTransform:
   m_Children:
   - {fileID: 1162802260}
   - {fileID: 606991299}
-  - {fileID: 1213977234}
   - {fileID: 407560118}
   - {fileID: 694348252}
   - {fileID: 1930973309}
+  - {fileID: 1213977234}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34107,7 +34143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053718814}
   - component: {fileID: 1053718816}
-  - component: {fileID: 1053718815}
+  - component: {fileID: 1053718817}
   m_Layer: 5
   m_Name: Toggle_Complicity
   m_TagString: Untagged
@@ -34137,19 +34173,6 @@ RectTransform:
   m_AnchoredPosition: {x: 232.7, y: -8.199902}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1053718815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053718813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 4
 --- !u!114 &1053718816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34197,8 +34220,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1053718815}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 1053718817}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -34210,6 +34233,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1053718817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053718813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 4
 --- !u!1001 &1055657217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36031,7 +36067,7 @@ PrefabInstance:
     - target: {fileID: 3173544338434843050, guid: fdf66fec5d744a849a6472ffc3c36eb0,
         type: 3}
       propertyPath: content
-      value: "Das ganze K\xF6nigreich feierte die Hochzeit des Helden"
+      value: "Das ganze K\xF6nigreich feierte die Hochzeit des Helden.<br>"
       objectReference: {fileID: 0}
     - target: {fileID: 3173544338434843050, guid: fdf66fec5d744a849a6472ffc3c36eb0,
         type: 3}
@@ -36253,7 +36289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107267188}
   - component: {fileID: 1107267190}
-  - component: {fileID: 1107267189}
+  - component: {fileID: 1107267191}
   m_Layer: 5
   m_Name: Toggle_Magical_Help
   m_TagString: Untagged
@@ -36283,19 +36319,6 @@ RectTransform:
   m_AnchoredPosition: {x: 378.2, y: 14.2}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1107267189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107267187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 5
 --- !u!114 &1107267190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36343,8 +36366,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1107267189}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 1107267191}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -36356,6 +36379,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1107267191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107267187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 5
 --- !u!1001 &1111184239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38147,7 +38183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1147386752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e8d253527014b4cb16632821f53d0d, type: 3}
+  m_Script: {fileID: 11500000, guid: e988ae17ced637645b710c68dd6387ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1155810992
@@ -38487,7 +38523,7 @@ RectTransform:
   m_GameObject: {fileID: 1162802259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8868188, y: 0.8868188, z: 0.8868188}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1512660872}
@@ -38497,7 +38533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 648, y: -324}
+  m_AnchoredPosition: {x: 715, y: -375}
   m_SizeDelta: {x: -1320, y: -670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162802261
@@ -38950,7 +38986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179814454}
   - component: {fileID: 1179814456}
-  - component: {fileID: 1179814455}
+  - component: {fileID: 1179814457}
   m_Layer: 5
   m_Name: Toggle_Difficult_Task
   m_TagString: Untagged
@@ -38980,19 +39016,6 @@ RectTransform:
   m_AnchoredPosition: {x: 378, y: -8.699902}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1179814455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179814453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 6
 --- !u!114 &1179814456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39040,8 +39063,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1179814455}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 1179814457}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -39053,6 +39076,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1179814457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179814453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 6
 --- !u!1001 &1182676307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39327,6 +39363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: prev_State
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: place_State
       value: 11
       objectReference: {fileID: 0}
@@ -39355,6 +39396,11 @@ PrefabInstance:
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: is_obligatory_condition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308543, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: m_Size.x
@@ -39855,7 +39901,7 @@ GameObject:
   - component: {fileID: 1213977235}
   - component: {fileID: 1213977238}
   m_Layer: 5
-  m_Name: close_app_btn
+  m_Name: Button_Close_App
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39870,11 +39916,11 @@ RectTransform:
   m_GameObject: {fileID: 1213977233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.020389, y: 1.020389, z: 1.020389}
+  m_LocalScale: {x: 0.8467202, y: 0.8467202, z: 0.8467202}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 882244044}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -40715,14 +40761,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d42f32bdce7b4be4395acd997dce8d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interact_only_once: 0
   obj_with_state_manager: {fileID: 1882864732}
   content: 
   exit_content: 
   place_State: 2
-  playerIsClose: 0
-  in_state: 0
-  has_condition: 1
-  obligatory_prev_State: 15
+  is_obligatory_condition: 0
+  prev_State: 15
+  blocked_when_prev_State: 0
   condition_content: Er bestand die Aufgabe. <br>
 --- !u!1001 &1232823725
 PrefabInstance:
@@ -41216,6 +41262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: prev_State
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: place_State
       value: 10
       objectReference: {fileID: 0}
@@ -41249,6 +41300,11 @@ PrefabInstance:
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: is_obligatory_condition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308543, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: m_Size.x
@@ -43312,10 +43368,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interaction_Place
       objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308540, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: content
-      value: Der Held betrat den tiefen Wald <br>
+      value: Der Held betrat den tiefen Wald. <br>
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
@@ -43329,9 +43390,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: blocked_prev_State
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: blocked_when_prev_State
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
+      propertyPath: is_obligatory_condition
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308543, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
       propertyPath: m_Size.x
@@ -44933,7 +45009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351668119
@@ -48423,7 +48499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457193312}
   - component: {fileID: 1457193314}
-  - component: {fileID: 1457193313}
+  - component: {fileID: 1457193315}
   m_Layer: 5
   m_Name: Toggle_Recognition
   m_TagString: Untagged
@@ -48453,19 +48529,6 @@ RectTransform:
   m_AnchoredPosition: {x: 523.3, y: 14.400097}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1457193313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457193311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 7
 --- !u!114 &1457193314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48513,8 +48576,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1457193313}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 1457193315}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -48526,6 +48589,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1457193315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457193311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 7
 --- !u!1001 &1458629785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50181,7 +50257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1499583269}
   - component: {fileID: 1499583271}
-  - component: {fileID: 1499583270}
+  - component: {fileID: 1499583272}
   m_Layer: 5
   m_Name: Toggle_Violation
   m_TagString: Untagged
@@ -50211,19 +50287,6 @@ RectTransform:
   m_AnchoredPosition: {x: 87.8, y: -8.499903}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1499583270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499583268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 2
 --- !u!114 &1499583271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50271,8 +50334,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1499583270}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+      - m_Target: {fileID: 1499583272}
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -50284,6 +50347,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!114 &1499583272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499583268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
 --- !u!1001 &1499917509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56177,7 +56253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633132225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 16.2, z: -10}
+  m_LocalPosition: {x: 6.3, y: 12.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -57328,7 +57404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 13, y: 6.0578246}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1668559395
@@ -57414,7 +57490,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 15}
+  m_margin: {x: 44.574005, y: 0, z: 61.828857, w: 15}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -59940,7 +60016,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1737217418}
-        m_TargetAssemblyTypeName: Toggle_Text, Assembly-CSharp
+        m_TargetAssemblyTypeName: Toggle_Trigger, Assembly-CSharp
         m_MethodName: Trigger_this_Toggle
         m_Mode: 1
         m_Arguments:
@@ -59961,7 +60037,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1737217415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 339d0aaa272ceae42be523a90d7ea7aa, type: 3}
+  m_Script: {fileID: 11500000, guid: ce84d5f6827b61b4e8d70cdeb21d1422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
@@ -63415,6 +63491,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
         type: 3}
+      propertyPath: interact_only_once
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2484449301998308542, guid: dcd0892b9ded1f54abfb0afdd2c40db9,
+        type: 3}
       propertyPath: obj_with_state_manager
       value: 
       objectReference: {fileID: 1882864732}
@@ -64592,7 +64673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1856216506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.98, y: -9.03, z: 0}
+  m_LocalPosition: {x: -2.64, y: -9.03, z: 0}
   m_LocalScale: {x: 0.78787, y: 0.78787, z: 0.78787}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -65786,7 +65867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882864732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 16.2, z: 0}
+  m_LocalPosition: {x: 6.3, y: 12.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67674,12 +67755,12 @@ RectTransform:
   m_GameObject: {fileID: 1930973308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25261104, y: 0.25261104, z: 0.38902098}
+  m_LocalScale: {x: 0.19347155, y: 0.19347155, z: 0.29794616}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1668559394}
   m_Father: {fileID: 882244044}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -67730,6 +67811,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1147386752}
+        m_TargetAssemblyTypeName: Menue_function, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1147386754}
         m_TargetAssemblyTypeName: Menue_function, Assembly-CSharp
         m_MethodName: Open_Main_Menue
@@ -74990,7 +75083,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3955100946333465434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.83, y: 17.83, z: 0}
+  m_LocalPosition: {x: 53.1, y: 8.2, z: 0}
   m_LocalScale: {x: 0.47978035, y: 0.47978035, z: 0.6397071}
   m_ConstrainProportionsScale: 0
   m_Children:

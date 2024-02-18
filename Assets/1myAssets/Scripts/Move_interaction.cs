@@ -10,13 +10,16 @@ public class Move_interaction : MonoBehaviour
     //reference Game Object which displays the interaction text here
     private TMP_Text text_output_Panel;
     private Story_Teller story_teller_script;
+    private State_Manager_Player.Available_States player_current;
+    private State_Manager_Player.Available_States player_prev;
+    [SerializeField] private bool interact_only_once;
 
     // Player Character, but can also be Management_object for entire Game
     [SerializeField] GameObject obj_with_state_manager;
     private State_Manager_Player state_Manager;
 
     // This is a TextArea with the Text for this Place, that is send to to StoryPanel
-    [TextArea(10,10)]
+    [TextArea(5,3)]
     [SerializeField] private string content;
     [SerializeField] private string exit_content;
 
@@ -24,10 +27,12 @@ public class Move_interaction : MonoBehaviour
     [SerializeField] private State_Manager_Player.Available_States place_State;
     //[SerializeField] private State_Manager_Player.Available_Function_States function_State;
 
-    public bool playerIsClose;
-    public bool in_state;
-    public bool has_condition;
-    [SerializeField] private State_Manager_Player.Available_States obligatory_prev_State;
+    private bool in_state;
+    //condition fields
+    public bool is_obligatory_condition;
+    [SerializeField] private State_Manager_Player.Available_States prev_State;
+    [SerializeField] private State_Manager_Player.Available_States blocked_when_prev_State;
+    [TextArea(5,3)]
     [SerializeField] private string condition_content;
 
     void Start()
@@ -48,11 +53,13 @@ public class Move_interaction : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            playerIsClose = true;
+            player_current = state_Manager.Get_Current_State();
+            player_prev = state_Manager.Get_Previous_State();
+            //playerIsClose = true;
             //state_Manager = collision.GetComponent<State_Manager_Player>(); // if other Gameobjects get Management Scripts (companions etc.) 
 
             // checks if previous and current state are different from this Place_state, so that Players don't trigger the same Text twice right after each other 
-            if(state_Manager.Get_Current_State() == obligatory_prev_State)
+            if(player_current == prev_State)
             {
                 in_state = true;
                 Debug.Log(condition_content);
@@ -60,9 +67,10 @@ public class Move_interaction : MonoBehaviour
                 state_Manager.Set_Current_State(place_State);
             }
             //so far conditions only contain obligatory previous states, so Function should return if condition is not fullfilled
-            else if (has_condition) return;
+            else if (player_current == blocked_when_prev_State)return;
+            else if (is_obligatory_condition) return;
             //normal interaction if no condition is set:
-            else if(state_Manager.Get_Current_State()!=place_State && state_Manager.Get_Previous_State()!=place_State)
+            else if(player_current!=place_State && player_prev!=place_State)
             {
                 //interdiction one and two
                 in_state = true;
@@ -70,6 +78,7 @@ public class Move_interaction : MonoBehaviour
                 story_teller_script.Add_to_Panel_txt(content);
                 state_Manager.Set_Current_State(place_State);
             }
+            if(interact_only_once) content ="";//GetComponent<Collider2D>().enabled =false;
         }
     }
 
@@ -78,10 +87,9 @@ public class Move_interaction : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            playerIsClose = false;
             Debug.Log("exit+ "+ place_State);
             
-            // Forest fully encapsules Trickery_Gameobject, state should return to forest without additional collider check when leaving Trickery
+            //Forest fully encapsules Trickery_Gameobject, state should return to forest without additional collider check when leaving Trickery
             //switch for trickery & complicity 
             if(place_State == State_Manager_Player.Available_States.trickery)
             {
