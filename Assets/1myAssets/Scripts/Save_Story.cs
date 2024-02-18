@@ -62,6 +62,8 @@ public class Save_Story : MonoBehaviour
         //true = append
         StreamWriter writer = new StreamWriter(path, false);
         tale_txt = Read_StoryTeller_txt();
+        tale_txt = tale_txt.Replace("<b>","");
+        tale_txt = tale_txt.Replace("</b>","");
         writer.Write(tale_txt.Replace("<br>", Environment.NewLine));
         writer.Close();
     }

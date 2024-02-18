@@ -1,28 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Manages Information about visited Places, collected items and fought fights
 public class State_Manager_Player : MonoBehaviour
 {
-    //propp state vs place state better
+    //propp states 
     public enum Available_States {none, home, roses, windmills, city, forest, deepForest, mountains, mountain_pass, magicalHelp, interdiction, violation, trickery, recognition, complicity, difficultTask}; 
-    //public enum Available_Function_States {empty, magicalHelp, interdiction, violation, trickery, recognition, complicity}; 
     [SerializeField] private Available_States current_state;
     [SerializeField] private Available_States prev_state;
-   // [SerializeField] private Available_Function_States current_function_state;
-    //[SerializeField] private Available_Function_States prev_function_state;
+    [SerializeField] private GameObject save_load_story;
+    private Save_Story save_load_script;
     [SerializeField] private GameObject companion;
     [SerializeField] private GameObject princess;
     [SerializeField] private GameObject princess_tower;
     [SerializeField] private GameObject evil_char;
-    //int might be used, if multiple
+    //event_states
     private bool fought_evil;
     private bool has_married;
     public bool has_freed_princess;
     private bool has_companion;
     private int candy_amount;
     [SerializeField]private int candy_limit;
+    //Fade
+    [SerializeField] private Menue_function menue;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -139,10 +142,19 @@ public class State_Manager_Player : MonoBehaviour
         if(has_married)
         {return;}
         Set_Has_Married(true);
+        StartCoroutine(Wedding_End_of_Game(0.5f));
         //NPC_interaction;Function state not necessary here, but might be preferred
         //do smth; End of game?
     }
 
+
+    private IEnumerator Wedding_End_of_Game(float seconds_to_wait)
+    {
+        GetComponent<Player_movement>().enabled = false;
+        yield return new WaitForSeconds(seconds_to_wait);
+        menue.Start_this_Game();
+    }
+    
     private IEnumerator Wait_for_Death(float seconds_to_wait)
     {
         yield return new WaitForSeconds(seconds_to_wait);
@@ -153,9 +165,8 @@ public class State_Manager_Player : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds_to_wait);
         princess_tower.SetActive(false);
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.3f);
         Instantiate(princess,new Vector2(princess_tower.GetComponent<Transform>().position.x-0.4f, princess_tower.GetComponent<Transform>().position.y-1.5f), transform.rotation);
     }
-
 
 }

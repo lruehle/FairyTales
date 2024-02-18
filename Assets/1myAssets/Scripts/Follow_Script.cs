@@ -21,7 +21,7 @@ public class Follow_Script : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         player_movement_script = player.GetComponent<Player_movement>();
         target_transform = player.GetComponent<Transform>();
-        move_speed = player_movement_script.moveSpeed + 1;
+        move_speed = player_movement_script.moveSpeed + 3;
     }
 
     // Update is called once per frame

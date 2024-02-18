@@ -35,6 +35,7 @@ public class Story_Teller : MonoBehaviour
     }
     public string Get_Panel_txt()
     {
+        Debug.Log(text_output_Panel.text);
         return text_output_Panel.text;
     }
 }

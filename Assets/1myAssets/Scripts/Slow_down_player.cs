@@ -35,9 +35,9 @@ public class Slow_down_player : MonoBehaviour
          {
            other.GetComponent<Player_movement>().moveSpeed = other.GetComponent<Player_movement>().moveSpeed +slow_down_value;
          }
-        else if(other.CompareTag("Companion"))
+        if(other.CompareTag("Companion"))
          {
-           other.GetComponent<Follow_Script>().move_speed = other.GetComponent<Follow_Script>().move_speed +slow_down_value;
+          other.GetComponent<Follow_Script>().move_speed = other.GetComponent<Follow_Script>().move_speed +slow_down_value;
          }
     }
 }
