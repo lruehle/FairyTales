@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: "MasterProjekt_Lilly_R\xFChle"
-  productName: MasterProjekt_Ruehle_2024
+  companyName: Master_Projekt_Ruehle_2024
+  productName: Master_Projekt_Ruehle_2024
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.12156863, g: 0.12156863, b: 0.1254902, a: 1}
@@ -156,7 +156,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Company.ProductName
-    Standalone: com.MasterProjekt-Lilly-R--hle.MasterProjekt-Ruehle-2024
+    Standalone: com.Master-Projekt-Ruehle-2024.Master-Projekt-Ruehle-2024
     Tizen: com.Company.ProductName
     iPhone: com.Company.ProductName
     tvOS: com.Company.ProductName

@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.6}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143056414
@@ -293,8 +293,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284628234
-  m_fontColor: {r: 0.039215688, g: 0.2392157, b: 0.38431376, a: 1}
+    rgba: 4284556300
+  m_fontColor: {r: 0.04705883, g: 0.14117648, b: 0.3803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -510,6 +510,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save_load_story: {fileID: 0}
   function_panel: {fileID: 0}
+  fade: {fileID: 0}
+  fade_img: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &186877035
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 2.600006}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647788759
@@ -645,8 +648,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284628234
-  m_fontColor: {r: 0.039215688, g: 0.2392157, b: 0.38431376, a: 1}
+    rgba: 4284556300
+  m_fontColor: {r: 0.04705883, g: 0.14117648, b: 0.3803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -912,7 +915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 4.7}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125198624
@@ -944,8 +947,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284628234
-  m_fontColor: {r: 0.039215688, g: 0.2392157, b: 0.38431376, a: 1}
+    rgba: 4284556300
+  m_fontColor: {r: 0.04705883, g: 0.14117648, b: 0.3803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1204,6 +1207,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save_load_story: {fileID: 0}
   function_panel: {fileID: 0}
+  fade: {fileID: 0}
+  fade_img: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!114 &1713306126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,3 +1453,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   save_load_story: {fileID: 0}
   function_panel: {fileID: 0}
+  fade: {fileID: 0}
+  fade_img: {fileID: 0}
+  anim: {fileID: 0}

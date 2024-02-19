@@ -142,7 +142,7 @@ public class State_Manager_Player : MonoBehaviour
         if(has_married)
         {return;}
         Set_Has_Married(true);
-        StartCoroutine(Wedding_End_of_Game(0.5f));
+        StartCoroutine(Wedding_End_of_Game(1.3f));
         //NPC_interaction;Function state not necessary here, but might be preferred
         //do smth; End of game?
     }
